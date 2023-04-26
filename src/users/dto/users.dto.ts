@@ -34,6 +34,10 @@ export class createUserDto {
   @IsBoolean()
   @IsOptional()
   status: boolean;
+
+  @ApiProperty()
+  @IsOptional()
+  avatar: string;
 }
 
 export class updateUserDto {
