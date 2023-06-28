@@ -38,6 +38,11 @@ export class createUserDto {
   @ApiProperty()
   @IsOptional()
   avatar: string;
+
+  @ApiProperty()
+  @IsString()
+  @IsNotEmpty()
+  password: string;
 }
 
 export class updateUserDto {
